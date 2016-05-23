@@ -1,0 +1,19 @@
+{
+  "name": "thrive-intranet",
+  "version": "0.0.1",
+  "description": "contains the code and styles used to customize Thrive's Intranet",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "thrive"
+  ],
+  "author": "Jon Horner",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.9.0",
+    "babel-loader": "^6.2.4",
+    "webpack": "^1.13.1"
+  }
+}
