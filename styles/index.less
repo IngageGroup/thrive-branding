@@ -1,21 +1,40 @@
+@import "variables";
+@import "mixins";
 
-@bgColor: #494949;
-@lightOrange: #e9a825;
-@darkOrange: #f07f29;
-@defaultFontColor: #494949;
-@lightGray: #ededed;
+h1 {
+	color: @textColorSecondary;
+}
+
+h2, h3, h4, h5, h6 {
+	color: @textColorPrimary;
+}
+
+a {
+	color: @textColorTertiary;
+
+	&:hover {
+		color: @darkOrange;
+		text-decoration: underline;
+	}
+}
 
 #header {
-  background-color: @bgColor;
+  background-color: @bgColorPrimary;
 }
 
 #navigation {
-  background-color: @bgColor;
+  background-color: @bgColorPrimary;
   border-bottom: 4px solid @darkOrange;
 }
 
 #content-head {
-  background-color: @bgColor;
+  background-color: @bgColorPrimary;
+
+	// If we want space on each side of page headers
+	width: 90%!important;
+	margin: auto;
+	border-radius: 6px;
+	padding: .66em 0!important;
 }
 
 #logo img {
@@ -24,12 +43,24 @@
 }
 
 #primarynav {
+	a {
+		text-decoration: none;
+	}
+
   li > a {
-    color: @lightOrange;
+    .transition(@textColorTertiary);
   }
+
+	li > a:hover {
+		.transition(@textColorSecondary);
+	}
 
   li.here > a {
     color: white;
     border-bottom: 2px solid white!important;
   }
 }
+
+
+
+@import "thrive";
