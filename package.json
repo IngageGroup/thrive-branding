@@ -1,5 +1,5 @@
 {
-  "name": "thrive-intranet",
+  "name": "thrive-branding",
   "version": "0.0.1",
   "description": "contains the code and styles used to customize Thrive's Intranet",
   "main": "index.js",
@@ -8,9 +8,7 @@
     "start": "webpack --colors --progress --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [
-    "thrive"
-  ],
+  "keywords": [],
   "author": "Jon Horner",
   "license": "ISC",
   "devDependencies": {

@@ -1,7 +1,7 @@
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
-  name: 'ThriveIntranet',
+  name: 'ThriveBranding',
   entry: './index.js',
   output: {
     filename: '[name].js',
