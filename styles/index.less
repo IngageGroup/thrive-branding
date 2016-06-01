@@ -2,20 +2,20 @@
 @import "mixins";
 
 h1 {
-	color: @textColorSecondary;
+  color: @textColorSecondary;
 }
 
 h2, h3, h4, h5, h6 {
-	color: @textColorPrimary;
+  color: @textColorPrimary;
 }
 
 a {
-	color: @textColorTertiary;
+  color: @textColorTertiary;
 
-	&:hover {
-		color: @darkOrange;
-		text-decoration: underline;
-	}
+  &:hover {
+    color: @darkOrange;
+    text-decoration: underline;
+  }
 }
 
 #header {
@@ -30,11 +30,11 @@ a {
 #content-head {
   background-color: @bgColorPrimary;
 
-	// If we want space on each side of page headers
-	width: 90%!important;
-	margin: auto;
-	border-radius: 6px;
-	padding: .66em 0!important;
+  // If we want space on each side of page headers
+  width: 90%!important;
+  margin: auto;
+  border-radius: 6px;
+  padding: .66em 0!important;
 }
 
 #logo img {
@@ -43,27 +43,26 @@ a {
 }
 
 #primarynav {
-	a {
-		text-decoration: none;
-		text-transform: capitalize;
-	}
+  a {
+    text-decoration: none;
+    text-transform: capitalize;
+  }
 
   li > a {
-		font-size: 13px;
-		
+    font-size: 13px;
+
     .transition(@textColorTertiary);
   }
 
-	li > a:hover {
-		.transition(@textColorSecondary);
-	}
+  li > a:hover {
+    .transition(@textColorSecondary);
+  }
 
   li.here > a {
     color: white;
     border-bottom: 2px solid white!important;
   }
 }
-
 
 
 @import "thrive";
