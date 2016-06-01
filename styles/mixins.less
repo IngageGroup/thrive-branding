@@ -1,27 +1,27 @@
 
 .transition (@bgColor, @textColor, @duration) {
-	background-color: @bgColor;
-	color: @textColor;
+  background-color: @bgColor;
+  color: @textColor;
 
-	transition-property: color, background-color;
-	.transition(@duration);
+  transition-property: color, background-color;
+  .transition(@duration);
 }
 
 .transition (@bgColor, @textColor) {
-	background-color: @bgColor;
-	color: @textColor;
+  background-color: @bgColor;
+  color: @textColor;
 
-	transition-property: color, background-color;
-	.transition();
+  transition-property: color, background-color;
+  .transition();
 }
 
 .transition (@textColor) {
-	color: @textColor;
+  color: @textColor;
 
-	transition-property: color;
-	.transition();
+  transition-property: color;
+  .transition();
 }
 
 .transition (@duration: .3s) {
-	transition-duration: @duration;
+  transition-duration: @duration;
 }

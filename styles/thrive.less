@@ -2,69 +2,69 @@
 @import "mixins";
 
 .thrive {
-	&.side-nav {
-		.ig-cpt-body {
-			border: none!important;
-			background: none!important;
+  &.side-nav {
+    .ig-cpt-body {
+      border: none!important;
+      background: none!important;
 
-			a {
-				border: none;
-				border-radius: 4px;
+      a {
+        border: none;
+        border-radius: 4px;
 
-				padding-top: .66em;
-				padding-bottom: .66em;
-				padding-left: 1em;
+        padding-top: .66em;
+        padding-bottom: .66em;
+        padding-left: 1em;
 
-				.transition(@bgColorSecondary, @textColorPrimary);
-			}
+        .transition(@bgColorSecondary, @textColorPrimary);
+      }
 
-			a:hover {
-				text-decoration: none;
+      a:hover {
+        text-decoration: none;
 
-				background-color: @bgColorPrimary;
-				color: @textColorSecondary;
-			}
+        background-color: @bgColorPrimary;
+        color: @textColorSecondary;
+      }
 
-			li+li {
-				margin-top: 2px;
-			}
-		}
-	}
+      li+li {
+        margin-top: 2px;
+      }
+    }
+  }
 
-	.ig-button, .ig-button_white {
-		background-color: @bgColorSecondary;
-		border-color: @bgColorSecondary!important;
-		color: @textColorPrimary;
+  .ig-button, .ig-button_white {
+    background-color: @bgColorSecondary;
+    border-color: @bgColorSecondary!important;
+    color: @textColorPrimary;
 
-		transition-property: background-color, border-color, color;
-		.transition();
+    transition-property: background-color, border-color, color;
+    .transition();
 
-		&:hover {
-			background-color: @bgColorPrimary;
-			border-color: @bgColorPrimary!important;
-			color: @textColorSecondary;
+    &:hover {
+      background-color: @bgColorPrimary;
+      border-color: @bgColorPrimary!important;
+      color: @textColorSecondary;
 
-			text-decoration:none;
-		}
-	}
+      text-decoration:none;
+    }
+  }
 
-	.ig-link > a {
-		text-decoration: none;
-		background-color: @bgColorSecondary !important;
-		color: @textColorPrimary !important;
+  .ig-link > a {
+    text-decoration: none;
+    background-color: @bgColorSecondary !important;
+    color: @textColorPrimary !important;
 
-		border-radius: 4px;
+    border-radius: 4px;
 
-		transition-property: background-color, color;
-		.transition();
+    transition-property: background-color, color;
+    .transition();
 
-		&:hover {
-			background-color: @bgColorPrimary !important;
-			color: @textColorSecondary !important;
-		}
-	}
+    &:hover {
+      background-color: @bgColorPrimary !important;
+      color: @textColorSecondary !important;
+    }
+  }
 
-	.ig-cpt-title {
-		color: inherit !important;
-	}
+  .ig-cpt-title {
+    color: inherit !important;
+  }
 }
