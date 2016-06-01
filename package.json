@@ -6,17 +6,17 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack --colors --progress",
-    "start": "webpack --colors --progress --watch",
+    "start": "webpack --colors --progress --watch"
   },
   "contributors": [
     {
       "name": "Jon Horner",
-      "email": "jon.horner@ingagepartners.com",
+      "email": "jon.horner@ingagepartners.com"
     }
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/IngageGroup/thrive-branding.git",
+    "url": "https://github.com/IngageGroup/thrive-branding.git"
   },
   "license": "See license in LICENSE.txt",
   "devDependencies": {
