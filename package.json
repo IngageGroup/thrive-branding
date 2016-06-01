@@ -2,15 +2,23 @@
   "name": "thrive-branding",
   "version": "0.0.1",
   "description": "contains the code and styles used to customize Thrive's Intranet",
+  "private": true,
   "main": "index.js",
   "scripts": {
     "build": "webpack --colors --progress",
     "start": "webpack --colors --progress --watch",
-    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "Jon Horner",
-  "license": "ISC",
+  "contributors": [
+    {
+      "name": "Jon Horner",
+      "email": "jon.horner@ingagepartners.com",
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/IngageGroup/thrive-branding.git",
+  },
+  "license": "See license in LICENSE.txt",
   "devDependencies": {
     "babel-core": "^6.9.0",
     "babel-loader": "^6.2.4",
