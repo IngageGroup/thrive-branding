@@ -1,5 +1,4 @@
 @import "variables";
-@import "mixins";
 
 h1 {
   color: @textColorSecondary;
@@ -20,21 +19,24 @@ a {
 
 #header {
   background-color: @bgColorPrimary;
+  border-bottom: 4px solid @darkOrange;
+  margin-bottom: 1.5em
 }
 
 #navigation {
   background-color: @bgColorPrimary;
-  border-bottom: 4px solid @darkOrange;
+  // border-bottom: 4px solid @darkOrange;
 }
 
 #content-head {
   background-color: @bgColorPrimary;
 
   // If we want space on each side of page headers
-  width: 90%!important;
+  width: 1100px !important; // TODO: make responsive
+  padding-left: 1em;
   margin: auto;
-  border-radius: 6px;
-  padding: .66em 0!important;
+  border-radius: @borderRadBig;
+  padding: .66em 2em !important;
 }
 
 #logo img {
@@ -50,19 +52,82 @@ a {
 
   li > a {
     font-size: 13px;
+    color: @textColorTertiary;
 
-    .transition(@textColorTertiary);
-  }
+    transition: color .3s;
 
-  li > a:hover {
-    .transition(@textColorSecondary);
+    &:hover {
+      color: @textColorSecondary;
+      transition: color .3s;
+    }
   }
 
   li.here > a {
     color: white;
-    border-bottom: 2px solid white!important;
+    border-bottom: 2px solid white !important;
+  }
+
+  // & > ul > li:not(#primarynav-more) {
+  //   .nav-dropdown {
+  //     display: none;
+  //     width: 10em;
+  //     border: 1px solid @lightOrange;
+  //     position: absolute;
+  //     left: 0;
+  //     top: 100%;
+  //
+  //     .nav-dropdown-item {
+  //       // display: block;
+  //       float: none;
+  //     }
+  //   }
+  //
+  //   &:hover ul {
+  //     display: block;
+  //   }
+  // }
+
+  & li:not(&-more) {
+    float: left;
+    position: relative;
+
+    a {
+      display: block;
+    }
+
+    ul {
+      // border: 1px solid @lightOrange;
+      border-radius: @borderRadMed;
+      background-color: #fff;
+      box-shadow: 5px 3px 5px black;
+
+      display: none;
+
+      z-index: 61;
+
+      position: absolute;
+      left: 0;
+      top: 100%;
+    }
+
+    &:hover ul {
+      display: block;
+    }
+
+    li {
+      float: none;
+    }
+
+    li > a {
+      margin: 0;
+      min-width: 10em;
+    }
   }
 }
 
+
+#navigation {
+  overflow: visible;
+}
 
 @import "thrive";

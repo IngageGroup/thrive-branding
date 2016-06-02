@@ -1,21 +1,24 @@
 @import "variables";
-@import "mixins";
 
 .thrive {
   &.side-nav {
     .ig-cpt-body {
-      border: none!important;
-      background: none!important;
+      border: none !important;
+      background: none !important;
 
       a {
         border: none;
-        border-radius: 4px;
+        border-radius: @borderRadMed;
 
         padding-top: .66em;
         padding-bottom: .66em;
         padding-left: 1em;
 
-        .transition(@bgColorSecondary, @textColorPrimary);
+        background-color: @bgColorSecondary;
+        color: @textColorPrimary;
+
+        transition-property: background-color, color;
+        transition-duration: .3s;
       }
 
       a:hover {
@@ -32,31 +35,33 @@
   }
 
   .ig-button, .ig-button_white {
+    border-radius: @borderRadMed;
+
     background-color: @bgColorSecondary;
-    border-color: @bgColorSecondary!important;
+    border-color: @bgColorSecondary !important;
     color: @textColorPrimary;
 
     transition-property: background-color, border-color, color;
-    .transition();
+    transition-duration: .3s;
 
     &:hover {
       background-color: @bgColorPrimary;
-      border-color: @bgColorPrimary!important;
+      border-color: @bgColorPrimary !important;
       color: @textColorSecondary;
 
-      text-decoration:none;
+      text-decoration: none;
     }
   }
 
   .ig-link > a {
     text-decoration: none;
+    border-radius: @borderRadMed;
+
     background-color: @bgColorSecondary !important;
     color: @textColorPrimary !important;
 
-    border-radius: 4px;
-
     transition-property: background-color, color;
-    .transition();
+    transition-duration: .3s;
 
     &:hover {
       background-color: @bgColorPrimary !important;
@@ -66,5 +71,37 @@
 
   .ig-cpt-title {
     color: inherit !important;
+  }
+}
+
+.nav-dropdown {
+  .nav-dropdown-item {
+    // box-shadow: 5px 3px 5px black;
+
+    a {
+      border: none;
+      border-radius: @borderRadMed;
+
+      padding-top: .66em;
+      padding-bottom: .66em;
+      padding-left: 1em;
+
+      background-color: @bgColorSecondary;
+      color: @textColorPrimary !important;
+
+      transition-property: background-color, color;
+      transition-duration: .3s;
+    }
+
+    a:hover {
+      text-decoration: none;
+
+      background-color: @bgColorPrimary;
+      color: @textColorSecondary !important;
+    }
+  }
+
+  .nav-dropdown-item + .nav-dropdown-item {
+    margin-top: .5em;
   }
 }

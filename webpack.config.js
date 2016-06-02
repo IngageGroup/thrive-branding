@@ -13,9 +13,9 @@ module.exports = {
       {
         test: /\.js$/,
         include: [
-          './src'
+          /src/
         ],
-        loader: 'babel?presets[]=es2015',
+        loader: 'babel-loader?presets[]=es2015',
       },
       {
         test: /\.(c|le)ss$/,
