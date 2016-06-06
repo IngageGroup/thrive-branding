@@ -1,6 +1,6 @@
 import { keys } from 'ramda';
 
-let navStruct = {
+const navStruct = {
   'news': [
     'News',
     'Events',
@@ -64,7 +64,7 @@ module.exports = ($ => {
 
     // For each subitem for a primary nav item
     for (let j = 0; j < navStruct[navItem].length; ++j) {
-      dropdown += `<li class="nav-dropdown-item"><a href="#">${navStruct[navItem][j]}</a></li>\n`;
+      dropdown += `<li class="nav-dropdown-item"><a href="">${navStruct[navItem][j]}</a></li>\n`;
     }
 
     dropdown += '</ul>';
@@ -73,6 +73,7 @@ module.exports = ($ => {
       $(navSel).append(dropdown);
     }
 
-
+    const baseUrl = $(`#nav-${topNav[i]} li > a`).attr('href');
+    console.log(baseUrl);
   }
 })(jQuery);

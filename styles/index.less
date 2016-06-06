@@ -103,7 +103,7 @@ a {
 
       display: none;
 
-      z-index: 61;
+      z-index: 110;
 
       position: absolute;
       left: 0;
@@ -121,13 +121,19 @@ a {
     li > a {
       margin: 0;
       min-width: 10em;
+
+      color: @textColorPrimary;
+    }
+
+    li > a:hover {
+      color: @textColorTertiary;
     }
   }
 }
-
 
 #navigation {
   overflow: visible;
 }
 
 @import "thrive";
+@import "responsive";
