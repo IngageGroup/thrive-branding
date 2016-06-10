@@ -52,12 +52,14 @@ const navStruct = {
   },
 };
 
-module.exports = (($) => {
+const injectDropdowns = ($) => {
   const baseUrl = `${window.location.protocol}//${window.location.host}`;
   const topNavKeys = keys(navStruct);
 
   // For each item in the primary nav bar...
   for (let i = 0; i < topNavKeys.length; ++i) {
+    console.log(`Nav: ${topNavKeys[i]}`);
+
     const navItem = topNavKeys[i];
     const navSel = `#nav-${navItem}`;
 
@@ -77,6 +79,15 @@ module.exports = (($) => {
 
     if (!isEmpty(navStruct[navItem])) {
       $(navSel).append(dropdown);
+      console.log('injecting');
+    } else {
+      console.log('not injecting');
     }
   }
+};
+
+
+module.exports = (($) => {
+  $(window).load(() => injectDropdowns($));
+  $(window).unload(() => $('.nav-dropdown').remove());
 })(jQuery);
