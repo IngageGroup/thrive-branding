@@ -39,9 +39,14 @@ a {
   padding: .66em 2em !important;
 }
 
-#logo img {
-  width: 50%;
-  height: auto;
+#logo {
+  max-width: 200px;
+  min-width: 125px;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
 }
 
 #primarynav {
@@ -87,6 +92,7 @@ a {
   //   }
   // }
 
+  // Styles Dropdowns
   & li:not(&-more) {
     float: left;
     position: relative;
@@ -121,6 +127,8 @@ a {
     li > a {
       margin: 0;
       min-width: 10em;
+      text-align: left;
+      padding-left: 1em;
 
       color: @textColorPrimary;
     }
@@ -133,6 +141,10 @@ a {
 
 #navigation {
   overflow: visible;
+}
+
+#main {
+  margin-top: 3em;
 }
 
 @import "thrive";
