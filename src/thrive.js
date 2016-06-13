@@ -48,7 +48,9 @@ const navStruct = {
     'Finance Resources': '',
   },
   'forum': {
-
+    'General Help': 'help',
+    'Issues/Bugs': 'bugs',
+    'Feedback': 'feedback',
   },
 };
 
