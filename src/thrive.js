@@ -51,6 +51,7 @@ const navStruct = {
     'General Help': 'help',
     'Issues/Bugs': 'bugs',
     'Feedback': 'feedback',
+    'Community Wiki': 'community_wiki',
   },
 };
 
