@@ -1,18 +1,33 @@
 import { isEmpty, keys } from 'ramda';
 
+// navStruct legend
+// navStruct: {
+//   'topLevelNavSection': {
+//     'DropdownItemString': 'DropdownItemLocation',
+//     ...
+//   },
+//   ...
+// };
+
 const navStruct = {
   'news': {
     'News': 'news',
-    'Events': 'events',
+    'Thrive Wiki': 'thrive_wiki',
+    'Holidays/PTO': 'holidays_pto',
+    'Pictures': 'thrivepictures',
+    'Community Engagement': 'engagement',
     'Thrive Afternoons': 'thriveafternoons',
-    'B Corp': 'b_corp',
-    'Ripple Report & Culture Book': 'ripplereport',
   },
   'employeegrowth': {
-    'Coaching': 'coaching',
     'Grad Plan': 'gradplan',
-    'Consultative Competencies': 'consultativecompetencies',
+    'Skill Building': 'skillbuilding',
     'Learning Portal': 'learningportal',
+  },
+  'forum': {
+    'General Help': 'help',
+    'Issues/Bugs': 'bugs',
+    'Feedback': 'feedback',
+    'Community Wiki': 'community_wiki',
   },
 
   // TODO: add paths to the following dropdown items
@@ -46,12 +61,6 @@ const navStruct = {
     'Building/Real Estate': '',
     'Quickbooks': '',
     'Finance Resources': '',
-  },
-  'forum': {
-    'General Help': 'help',
-    'Issues/Bugs': 'bugs',
-    'Feedback': 'feedback',
-    'Community Wiki': 'community_wiki',
   },
 };
 
