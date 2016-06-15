@@ -20,7 +20,7 @@ const navStruct = {
   },
   'employeegrowth': {
     'Grad Plan': 'gradplan',
-    'Skill Building': 'skillbuilding',
+    'Skill Building': 'skill_building',
     'Learning Portal': 'learningportal',
   },
   'forum': {
