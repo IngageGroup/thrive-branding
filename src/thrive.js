@@ -11,56 +11,49 @@ import { isEmpty, keys } from 'ramda';
 
 const navStruct = {
   'news': {
-    'News': 'news',
-    'Thrive Wiki': 'thrive_wiki',
-    'Holidays/PTO': 'holidays_pto',
+    'News': 'news_page',
+    'Thrive Feed': 'thrive_feed',
+    'Events': 'events',
+    'Holidays/PTO': 'holidayspto',
     'Pictures': 'thrivepictures',
     'Community Engagement': 'engagement',
+    'Community Wiki': 'community_wiki',
     'Thrive Afternoons': 'thriveafternoons',
   },
   'employeegrowth': {
     'Grad Plan': 'gradplan',
-    'Skill Building': 'skill_building',
-    'Learning Portal': 'learningportal',
+    'Learning Portal': 'learning_portal',
+    'Learning Wiki': 'learning_wiki',
+  },
+  'hr': {
+    'Onboarding': 'onboarding',
+    'Founders': 'founders',
+    'Admins': 'admins',
+    'Management': 'management',
+    'Huddle Leads': 'huddle_leads',
+    'Analysts': 'analysts',
+    'All Members': 'all_members',
   },
   'forum': {
     'General Help': 'help',
-    'Issues/Bugs': 'bugs',
+    'Report Issues/Bugs': 'bug',
     'Feedback': 'feedback',
-    'Community Wiki': 'community_wiki',
+  },
+  'mgmt': {
+    'Human Resources': 'hr',
+    'Sales & Marketing': 'sales_and_marketing',
+    'Operations': 'operations',
+    'I.T.': 'it',
+    'Co-Founders': 'co_founders',
+    'Community Engagement': 'community_engagement',
   },
 
   // TODO: add paths to the following dropdown items
-  'hub': {
-    'Recruiting': '',
-    'Benefits': '',
-    'New Hires': '',
-    'Quickbooks': '',
-    'Paycor': '',
-    'Policies & Procedures': '',
-    'Performance Reviews': '',
-    'Employee Directory': '',
-    'Expense Reports': '',
-    'Utilization Report': '',
-  },
   'projects': {
     'Client Projects': '',
     'Client Project Archives': '',
     'Internal Projects': '',
     'Internal Project Archives': '',
-  },
-  'sales': {
-    'Marketing Collateral': '',
-    'Client Presentations': '',
-    'Case Studies': '',
-    'Business Development': '',
-    'Salesforce': '',
-  },
-  'operations': {
-    'I.T.': '',
-    'Building/Real Estate': '',
-    'Quickbooks': '',
-    'Finance Resources': '',
   },
 };
 
