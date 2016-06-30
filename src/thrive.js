@@ -39,14 +39,6 @@ const navStruct = {
     'Report Issues/Bugs': 'bug',
     'Feedback': 'feedback',
   },
-  'mgmt': {
-    'Human Resources': 'hr',
-    'Sales & Marketing': 'sales_and_marketing',
-    'Operations': 'operations',
-    'I.T.': 'it',
-    'Co-Founders': 'co_founders',
-    'Community Engagement': 'community_engagement',
-  },
 
   // TODO: add paths to the following dropdown items
   'projects': {
@@ -63,8 +55,6 @@ const injectDropdowns = ($) => {
 
   // For each item in the primary nav bar...
   for (let i = 0; i < topNavKeys.length; ++i) {
-    console.log(`Nav: ${topNavKeys[i]}`);
-
     const navItem = topNavKeys[i];
     const navSel = `#nav-${navItem}`;
 
@@ -84,15 +74,21 @@ const injectDropdowns = ($) => {
 
     if (!isEmpty(navStruct[navItem])) {
       $(navSel).append(dropdown);
-      console.log('injecting');
-    } else {
-      console.log('not injecting');
     }
   }
 };
 
+const newTabLinks = ($) => {
+  $('.new-tab a').each(function(index) {
+    this.target = '_blank';
+    console.log(`${index}: `, this);
+  });
+};
 
 module.exports = (($) => {
-  $(window).load(() => injectDropdowns($));
   $(window).unload(() => $('.nav-dropdown').remove());
+  $(window).load(() => {
+    injectDropdowns($);
+    newTabLinks($);
+  });
 })(jQuery);
