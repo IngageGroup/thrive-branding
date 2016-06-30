@@ -1,6 +1,6 @@
 {
   "name": "thrive-branding",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "contains the code and styles used to customize Thrive's Intranet",
   "private": true,
   "main": "index.js",
