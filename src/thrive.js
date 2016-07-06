@@ -35,8 +35,9 @@ const navStruct = {
     'All Members': 'all_members',
   },
   'forum': {
-    'General Help': 'help',
-    'Report Issues/Bugs': 'bug',
+    'General Topics': 'general',
+    'Growth & Development': 'help',
+    'Report Issue/Bug': 'bug',
     'Feedback': 'feedback',
   },
 
