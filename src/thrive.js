@@ -1,14 +1,5 @@
 import { isEmpty, keys } from 'ramda';
 
-// navStruct legend
-// navStruct: {
-//   'topLevelNavSection': {
-//     'DropdownItemString': 'DropdownItemLocation',
-//     ...
-//   },
-//   ...
-// };
-
 const navStruct = {
   'news': {
     'News': 'news_page',
@@ -34,19 +25,17 @@ const navStruct = {
     'Analysts': 'analysts',
     'All Members': 'all_members',
   },
+  'projects': {
+    'Client Projects': 'client_projects',
+    'Client Project Archives': 'client_project_archives',
+    'Internal Projects': 'internal_projects',
+    'Internal Project Archives': 'internal_project_archives',
+  },
   'forum': {
     'General Topics': 'general',
     'Growth & Development': 'help',
     'Report Issue/Bug': 'bug',
     'Feedback': 'feedback',
-  },
-
-  // TODO: add paths to the following dropdown items
-  'projects': {
-    'Client Projects': '',
-    'Client Project Archives': '',
-    'Internal Projects': '',
-    'Internal Project Archives': '',
   },
 };
 
@@ -82,7 +71,6 @@ const injectDropdowns = ($) => {
 const newTabLinks = ($) => {
   $('.new-tab a').each(function(index) {
     this.target = '_blank';
-    console.log(`${index}: `, this);
   });
 };
 
